@@ -1,17 +1,52 @@
 /* CSS Document */
 
-body{
+body, html {
 	background: #efeee7;
 	font-family: "Georgia, Times New Roman, Times, serif";
 	color: #333333;
 	margin: 0px;
 	padding: 0px;
+
+	/*this is needed for the full page image*/
+	height: 100%;
+	z-index: 1;
+}
+.header{
+	display: block;
+	width: 100%;
+	height: 200px;
+	border: thin solid #000000;
+}
+.bio-image{
+	float: left;
+}
+.main-bio{
+	display: block;
+	width: 100%;
+	height: 200px;
+	border: thin solid #F3070B;
+}
+.footer{
+	clear: left;
+	display: block;
+	width: 100%;
+	height: 200px;
+	border: thin solid #000000;
 }
 
-#mainBio{
+
+.contact-info{
 	
 }
 
-#contactInfo{
-	
+
+/*this defines the full page background image*/
+.bg{
+	background-image: url("../images/backgroundImage.jpg");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	opacity: 0.25;
+	z-index: 0;
 }
