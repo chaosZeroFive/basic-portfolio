@@ -1,25 +1,23 @@
 /* CSS Document */
 
-body, html {
+/*body, html {
 	background: #efeee7;
 	font-family: "Georgia, Times New Roman, Times, serif";
 	color: #333333;
 	margin: 0px;
 	padding: 0px;
 
-	/*this is needed for the full page image*/
+	/*this is needed for the full page image
 	height: 100%;
 	z-index: 1;
-}
+}*/
 .header{
 	display: block;
 	width: 100%;
 	height: 200px;
 	border: thin solid #000000;
 }
-.bio-image{
-	float: left;
-}
+
 .main-bio{
 	display: block;
 	width: 100%;
@@ -33,14 +31,11 @@ body, html {
 	height: 200px;
 	border: thin solid #000000;
 }
-
-
 .contact-info{
 	
 }
 
-
-/*this defines the full page background image*/
+/*this defines the full page background image
 .bg{
 	background-image: url("../images/backgroundImage.jpg");
 	height: 100%;
@@ -49,4 +44,39 @@ body, html {
 	background-size: cover;
 	opacity: 0.25;
 	z-index: 0;
+}*/
+
+.image-container{
+	position: relative;
+	float: left;
+	width: 306px;
+	height: 408px;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+.image-text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.bio-image{
+	float: left;
 }
