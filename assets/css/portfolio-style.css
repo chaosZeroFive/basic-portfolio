@@ -12,6 +12,14 @@ body {
 header {
     background: #333;
 }
+p{
+    text-align: justify;
+}
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
 h1 {
     padding: 10px;
     margin-top: 1px;
