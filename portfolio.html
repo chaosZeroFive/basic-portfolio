@@ -1,37 +1,29 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en-us">
 <head>
-<meta charset="utf-8">
-<title>Portfolio</title>
-<link rel="stylesheet" type="text/css" href="assets/css/portfolio-style.css">
-</head>
+<meta charset="UTF-8">
+<title>CSS Stylesheets with Relative Paths</title>
 
+<link href="assets/css/portfolio-style.css" rel="stylesheet" type="text/css">
+</head>
 <body>
-<header class="header">
-  <h1>Portfolio</h1>
+<header>
+  <h1>Biographical Summary</h1>
 </header>
-<div class="main-bio">
-  <div class="image-container"> <img src="assets/images/bioImage.jpg" width="306" height="408" alt="" />
-    <div class="image-overlay">
-      <div class="image-text">Mr. Norris</div>
-      </br>
-    </div>
-  </div>
-  <section class="intro-column">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sit amet neque eu euismod. Curabitur non ultrices augue. In id dapibus ex, eu blandit lacus. Cras lobortis eu metus sed luctus. Donec rhoncus rutrum tempor. Sed vitae metus eu magna gravida pretium. Nullam finibus hendrerit finibus. Aliquam erat volutpat. Vestibulum vitae sodales diam. </p>
+<div class="container">
+  <section id="main-bio">
+    <h2>Alton W. Carroll</h2>
+    <img id="bio-image" src="assets/images/bioImage.jpg" alt="Your Name">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique nisi lorem, interdum elementum leo tristique a. Ut scelerisque vel augue sit amet porttitor. Cras finibus felis sed erat condimentum, a blandit massa dapibus. Proin aliquet congue ornare. Sed condimentum orci non nulla pharetra, eu elementum ex ullamcorper. Nunc nunc neque, laoreet a odio sed, consequat luctus ex. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc turpis quam, hendrerit non mollis id, ornare eget massa. Pellentesque rhoncus sollicitudin convallis.</p>
   </section>
-  <section class="intro-column"> 
-	  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus sit amet neque eu euismod. Curabitur non ultrices augue. In id dapibus ex, eu blandit lacus. Cras lobortis eu metus sed luctus. Donec rhoncus rutrum tempor. Sed vitae metus eu magna gravida pretium. Nullam finibus hendrerit finibus. Aliquam erat volutpat. Vestibulum vitae sodales diam.</p>
-	</section>
+  <section id="contact-info">
+    <h2>Contact Info</h2>
+    <ul>
+      <li><strong>Email:</strong> <a href="#">chaos.five.zero@gmail.com</a></li>
+      <li><strong>Github:</strong> <a href="#">chaosZeroFive</a></li>
+      <li><strong>Portfolio:</strong> <a href="#">TBP</a></li>
+    </ul>
+  </section>
 </div>
-</main>
-<footer class="footer">
-  <h2>Contact Info</h2>
-  <ul>
-    <li><strong>Email:</strong> <a href="#">chaos.five.zero@gmail.com</a></li>
-    <li><strong>GitHub:</strong> <a href="#">chaosZeroFive</a></li>
-    <li><strong>Portfolio:</strong> <a href="#">TBP</a></li>
-  </ul>
-</footer>
 </body>
 </html>
