@@ -51,6 +51,21 @@ a {
 #contact-info {
     width: 35%;
 }
+
+.li-btn{
+    list-style: none;
+}
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    text-decoration: none;
+    color: initial;
+    font-size: 12pt;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    padding: 5px 5px 5px 5px;
+    margin: 2px 2px 2px 2px;
+}
 #bio-image {
     width: 200px;
     height: 250px;
